@@ -12,12 +12,15 @@ Een applicatie waar je afbeeldingen en teksten kunt uploaden die door de communi
 - Kan zelf niets uploaden
 - Kan zien op het scherm hoeveel down en upvotes iets heeft
 - Na een week wordt een afbeelding/tekst niet meer weergegeven op het grote scherm
+- Kan zich registreren
+- Kan een password recovery aanvragen
  
 ### Voor de normale geregistreerde gebruiker:
 - Kan afbeeldingen en teksten toevoegen
 - Kan voten en upvoten
 - Kan zijn posts verbergen/verwijderen
 - Heeft een soort profiel pagina waar alle posts te zien zijn (behalve de verborgen posts)
+- Kan zijn username, en andere credentials wijzigen
  
 ### Voor de geregistreerde gebruiker met admin rechten:
 - Kan alle posts bewerken/verwijderen
