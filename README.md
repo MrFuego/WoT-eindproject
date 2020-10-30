@@ -7,24 +7,24 @@ Een applicatie waar je afbeeldingen en teksten kunt uploaden die door de communi
 ## Features:
  
 ### Voor de niet geregistreerde gebruiker:
--Kan de populaire posts zien op een openbaar scherm
--Kan in de applicatie alle afbeeldingen en teksten zien, maar niet voten
--Kan zelf niets uploaden
--Kan zien op het scherm hoeveel down en upvotes iets heeft
--Na een week wordt een afbeelding/tekst niet meer weergegeven op het grote scherm
+- Kan de populaire posts zien op een openbaar scherm
+- Kan in de applicatie alle afbeeldingen en teksten zien, maar niet voten
+- Kan zelf niets uploaden
+- Kan zien op het scherm hoeveel down en upvotes iets heeft
+- Na een week wordt een afbeelding/tekst niet meer weergegeven op het grote scherm
  
 ### Voor de normale geregistreerde gebruiker:
--Kan afbeeldingen en teksten toevoegen
--Kan voten en upvoten
--Kan zijn posts verbergen/verwijderen
+- Kan afbeeldingen en teksten toevoegen
+- Kan voten en upvoten
+- Kan zijn posts verbergen/verwijderen
  
 ### Voor de geregistreerde gebruiker met admin rechten:
--Kan alle posts bewerken/verwijderen
+- Kan alle posts bewerken/verwijderen
  
 ### Technologieën:
--Web app geschreven in ReactJS
--Google firestore/firebase voor databeheer
--raspberry pi om de app uit te lezen (adhv API) en de populaire posts weer te geven op een scherm
+- Web app geschreven in ReactJS
+- Google firestore/firebase voor databeheer
+- raspberry pi om de app uit te lezen (adhv API) en de populaire posts weer te geven op een scherm
  
 *Uitbreidingen steeds mogelijk als er nog dingen in mij opkomen*
  
