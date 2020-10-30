@@ -32,5 +32,3 @@ Een applicatie waar je afbeeldingen en teksten kunt uploaden die door de communi
 1) Setup van project + Login -> 30/10
 2) uploaden afbeelding/tekst ->06/11
 3) Upvoten/downvoten -> 13/11
-
-test
