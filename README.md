@@ -41,19 +41,19 @@ Eerst moet je een account registreren, na registratie kun je inloggen. Eens je b
 *Uitbreidingen steeds mogelijk als er nog dingen in mij opkomen*
  
 ### Feature development:
-**1) Setup van project + Login/ Registratie -> 30/10**  
+1) **Setup van project + Login/ Registratie -> 30/10**  
 *Zorgen dat er geregistreerd kan worden, na registratie moet er ingelogd kunnen worden, en password reset moet weergegeven worden*  
 2) **Wireframes + designs -> 13/11**  
 *De wireframes + designs van de webapp en het foto-frame moeten klaar zijn*  
-3) UI van webapp afwerken (niet volledig functioneel) -> 20/11  
+3) **UI van webapp afwerken (niet volledig functioneel) -> 20/11**  
 *De UI wordt met ReactJS nagebouwd in code, de links worden ook al werkend gemaakt met React router*  
-4) Frame gedeelte van de app opzetten (ID genereren) -> 27/11  
+4) **Frame gedeelte van de app opzetten (ID genereren) -> 27/11**  
 *De functionele werking van het foto frame wordt opgezet (genereren van unique ID, (QR code genereren), display tekst toevoegen met simpele instructies)*  
-5) UI van webapp afwerken (niet volledig functioneel) -> 04/12  
+5) **UI van webapp afwerken (niet volledig functioneel) -> 04/12**  
 *Verdere afwerking van de UI in ReactJS*  
-6) Uploaden afbeelding naar google firestore -> 11/12  
+6) **Uploaden afbeelding naar google firestore -> 11/12**  
 *Je moet afbeeldingen kunnen oploaden naar de database*  
-7) Foto album beheer -> 18/12  
+7) **Foto album beheer -> 18/12**  
 *Je moet afbeeldingen kunnen linken naar een album, en volledig kunnen verwijderen van je account*  
-8) Extra features toevoegen -> ...  
+8) **Extra features toevoegen -> ...**  
 *Mogelijks komen er nog extra features bij*  
