@@ -41,9 +41,9 @@ Eerst moet je een account registreren, na registratie kun je inloggen. Eens je b
 *Uitbreidingen steeds mogelijk als er nog dingen in mij opkomen*
  
 ### Feature development:
-1) Setup van project + Login/ Registratie -> 30/10  
+**1) Setup van project + Login/ Registratie -> 30/10**  
 *Zorgen dat er geregistreerd kan worden, na registratie moet er ingelogd kunnen worden, en password reset moet weergegeven worden*  
-2) Wireframes + designs -> 13/11  
+2) **Wireframes + designs -> 13/11**  
 *De wireframes + designs van de webapp en het foto-frame moeten klaar zijn*  
 3) UI van webapp afwerken (niet volledig functioneel) -> 20/11  
 *De UI wordt met ReactJS nagebouwd in code, de links worden ook al werkend gemaakt met React router*  
