@@ -1,43 +1,61 @@
 # WoT-eindproject
-Web App build on react to display text and images on a big screen managed by the community
 
 ## Wat ga ik maken:
-Een applicatie waar je afbeeldingen en teksten kunt uploaden die door de community kunnen ge-upvote en ge-downvote worden. Bij x-aantal upvotes wordt jouw afbeelding/tekst weergegeven op het groot scherm.
+Een responsive web-app voor het beheren van foto's om deze te kunnen weergeven op fotoframes.
+
+## Kort synopsis over hoe de app werkt:
+### Foto frame gedeelte van de app:
+Bij de eerste launch wordt er een unieke ID gegenereerd en opgeslagen in een tekst bestand.
+Deze ID wordt dan weergegeven op het scherm samen met een QR code en web adres naar de applicatie. Er staat ook wat korte info bij. Eens de ID is geregistreerd wordt ook de userID van de gelinkte gebruiker opgeslagen in het text bestand.
+*QR code kan eventueel de link naar de site + de unieke ID bevatten voor gebruiksgemak*
+
+### Web gedeelte van de app
+Eerst moet je een account registreren, na registratie kun je inloggen. Eens je bent ingelogd kun je een device toevoegen met de unieke ID die gegenereerd werd op het frame. Je kunt het frame dan een naam geven voor gebruiksgemak. Je kunt vervolgens foto’s toevoegen in albums, en deze albums kun je linken aan een frame.
+
 
 ## Features:
  
-### Voor de niet geregistreerde gebruiker:
-- Kan de populaire posts zien op een openbaar scherm
-- Kan in de applicatie alle afbeeldingen en teksten zien, maar niet voten
-- Kan zelf niets uploaden
-- Kan zien op het scherm hoeveel down en upvotes iets heeft
-- Na een week wordt een afbeelding/tekst niet meer weergegeven op het grote scherm
-- Kan zich registreren
-- Kan een password recovery aanvragen
+### Een niet geregistreerde gebruiker kan
+- zelf NIETS uploaden
+- zich registreren
+- een password recovery aanvragen
  
-### Voor de normale geregistreerde gebruiker:
-- Kan afbeeldingen en teksten toevoegen
-- Kan voten en upvoten
-- Kan zijn posts verbergen/verwijderen
-- Heeft een soort profiel pagina waar alle posts te zien zijn (behalve de verborgen posts)
-- Kan zijn username, en andere credentials wijzigen
- 
-### Voor de geregistreerde gebruiker met admin rechten:
-- Kan alle posts bewerken/verwijderen
-- Kan alle geregistreede gebruikers zien
-- Kan een geregistreerde gebruiker bannen voor x-aantal tijd
+### Een geregistreerde gebruiker kan
+- zich inloggen
+- afbeeldingen toevoegen
+- devices toevoegen
+- devices verwijderen
+- zijn username, en andere credentials wijzigen
+- afbeeldingen toevoegen aan een fotoframe
+- afbeeldingen verwijderen gelinkt aan een fotoframe
+#### Uitbreiding:
+- Kan vrienden toevoegen
+
  
 ### Technologieën:
 - Web app geschreven in ReactJS
 - Google firestore/firebase voor databeheer
-- raspberry pi om de app uit te lezen (adhv API) en de populaire posts weer te geven op een scherm
+- raspberry pi om de app uit te lezen
+- QR code generator API
  
 *Uitbreidingen steeds mogelijk als er nog dingen in mij opkomen*
  
 ### Feature development:
-1) Setup van project + Login -> 30/10
-2) Wireframes + designs -> 06/11
-3) Uploaden afbeelding/tekst (WYSIWYG???) -> 13/11
-4) Upvoten/downvoten van tekst en afbeeldingen -> 20/11
-5) Admin paneel bouwen -> 27/11
-6) Profiel pagina van een geregistreerde gebruiker -> 04/12
+1) Setup van project + Login/ Registratie -> 30/10
+2) Wireframes + designs -> 13/11
+3) UI van webapp afwerken (niet volledig functioneel) -> 20/11
+4) Frame gedeelte van de app opzetten (ID genereren) -> 27/11
+5) UI van webapp afwerken (niet volledig functioneel) -> 04/12
+6) Uploaden afbeelding naar google firestore -> 11/12
+7) Foto album beheer -> 18/12
+8) Extra features toevoegen -> ...
+
+1 Zorgen dat er geregistreerd kan worden, na registratie moet er ingelogd kunnen worden, en password reset moet weergegeven worden
+2 De wireframes + designs van de webapp en het foto-frame moeten klaar zijn
+3 De UI wordt met ReactJS nagebouwd in code, de links worden ook al werkend gemaakt met React router
+4 De functionele werking van het foto frame wordt opgezet (genereren van unique ID, (QR code genereren), display tekst toevoegen met simpele instructies)
+5 Verdere afwerking van de UI in ReactJS
+6 Je moet afbeeldingen kunnen oploaden naar de database
+7 Je moet afbeeldingen kunnen linken naar een album, en volledig kunnen verwijderen van je account
+8 Mogelijks komen er nog extra features bij
+ 
