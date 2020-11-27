@@ -1,0 +1,42 @@
+.content__container{
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+.cardItem__container{
+    width: 100%;
+    max-width: 23%;
+    box-sizing: border-box;
+    padding:1%;
+    margin: 1%;
+    text-align: center;
+}
+
+.content__container .cardItem__container.card .cardItem__icons{
+    font-size: 3rem;
+    width: 100%;
+    margin: 10% 0 8% 0;
+}
+
+a.cardLinks{
+    width: 100%;
+    max-width: 23%;
+    margin: 1%;
+    text-align: center;
+    color: black;
+}
+
+a.cardLinks:hover{
+    color: white;
+    text-decoration: none;
+}
+
+a.cardLinks .cardItem__container{
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+a.cardLinks .cardItem__container:hover{
+    background-color:black;
+}
