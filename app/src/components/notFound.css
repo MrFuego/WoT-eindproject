@@ -58,6 +58,7 @@
     margin: 0px;
     letter-spacing: 3px;
     padding-left: 6px;
+    line-height: 0;
   }
   
   .notfound h2 {

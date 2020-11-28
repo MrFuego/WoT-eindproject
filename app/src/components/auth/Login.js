@@ -45,6 +45,9 @@ export default function Login() {
                 Login
               </Button>
             </Form>
+            <div className="w-100 text-center mt-3">
+              <Link to="/forgotPassword"> Wachtwoord vergeten? </Link>
+            </div>
           </Card.Body>
         </Card>
         <div className="w-100 text-center mt-2">

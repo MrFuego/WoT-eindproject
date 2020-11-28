@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import { useAuth } from '../auth/AuthContext'
 import CardItem from '../partials/CardItem'
@@ -8,7 +8,7 @@ import './dashboard.css'
 
 
 const DashboardItemsList = [
-    {title: "Foto's uploaden", icon: "fa fa-plus", link: "addPhotos"}, {title: "Alle foto's", icon:"fas fa-image", link: "myPhotos"}, {title: "Foto bibliotheken", icon:"far fa-images", link: "myAlbums"}, {title: "Account", icon:"fas fa-user", link: "profile"}, {title: "Devices", icon:"fas fa-desktop", link: "devices"}
+    {title: "Foto's uploaden", icon: "fa fa-plus", link: "addPhotos"}, {title: "Alle foto's", icon:"fas fa-image", link: "myPhotos"}, {title: "Foto bibliotheken", icon:"far fa-images", link: "myAlbums"}, {title: "Account", icon:"fas fa-user", link: "updateProfile"}, {title: "Devices", icon:"fas fa-desktop", link: "devices"}
 ]
 
 export default function Dashboard(){
@@ -21,7 +21,7 @@ export default function Dashboard(){
             
             <div className="content__container dashboard__card__container">
                     {DashboardItemsList.map(item => 
-                        <Link className="cardLinks" to={'/'+item.link}>
+                        <Link className="cardLinks" to={'/'+item.link} key = {item.title}>
                             <CardItem
                                 key = {item.title}
                                 title = {item.title}

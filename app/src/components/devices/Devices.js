@@ -16,7 +16,7 @@ export class Devices extends Component {
                 
                 <div className="content__container devices__card__container">
                         {devicesItemsList.map(item => 
-                            <Link className="cardLinks" to={'/'+item.link}>
+                            <Link className="cardLinks" to={'/'+item.link} key = {item.title}>
                                 <CardItem
                                     key = {item.title}
                                     title = {item.title}

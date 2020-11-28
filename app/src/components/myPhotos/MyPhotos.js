@@ -5,7 +5,7 @@ import React from 'react'
 export default function MyPhotos() {
     return (
         <div>
-            <h>Mijn foto's</h>
+            <h1>Mijn foto's</h1>
         </div>
     )
 }
