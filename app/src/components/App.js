@@ -10,6 +10,9 @@ import PrivateRoute from './auth/PrivateRoute';
 import NotFound from './NotFound';
 import ForgotPassword from './auth/ForgotPassword';
 import UpdateProfile from './auth/UpdateProfile';
+import AddPhotos from './myPhotos/AddPhotos';
+import MyAlbums from './albums/MyAlbums';
+import AddAlbum from './albums/AddAlbum';
 
 function App() {
   return (
@@ -20,6 +23,9 @@ function App() {
           <PrivateRoute path="/devices" component={Devices} />
           <PrivateRoute path="/myPhotos" component={MyPhotos} />
           <PrivateRoute path="/updateProfile" component={UpdateProfile} />
+          <PrivateRoute path="/addPhotos" component={AddPhotos} />
+          <PrivateRoute path="/addAlbum" component={AddAlbum} />
+          <PrivateRoute path="/myAlbums" component={MyAlbums} />
           <Route path="/signup" component={Signup} />
           <Route path="/login" component={Login} />
           <Route path="/forgotPassword" component={ForgotPassword} />

@@ -8,7 +8,7 @@ import './dashboard.css'
 
 
 const DashboardItemsList = [
-    {title: "Foto's uploaden", icon: "fa fa-plus", link: "addPhotos"}, {title: "Alle foto's", icon:"fas fa-image", link: "myPhotos"}, {title: "Foto bibliotheken", icon:"far fa-images", link: "myAlbums"}, {title: "Account", icon:"fas fa-user", link: "updateProfile"}, {title: "Devices", icon:"fas fa-desktop", link: "devices"}
+    {title: "Album toevoegen", icon: "fa fa-plus", link: "addAlbum"}, /*{title: "Alle foto's", icon:"fas fa-image", link: "myPhotos"},*/ {title: "Mijn albums", icon:"far fa-images", link: "myAlbums"}, {title: "Account", icon:"fas fa-user", link: "updateProfile"}, {title: "Devices", icon:"fas fa-desktop", link: "devices"}
 ]
 
 export default function Dashboard(){
@@ -17,7 +17,7 @@ export default function Dashboard(){
 
     return (
         <div className="dashboard__container">
-            <h1 className="dashboard__page__title h1 text-center">Welkom {currentUser.email}</h1>
+            <h1 className="dashboard__page__title h1 text-center  mt-5">Welkom {currentUser.email}</h1>
             
             <div className="content__container dashboard__card__container">
                     {DashboardItemsList.map(item => 

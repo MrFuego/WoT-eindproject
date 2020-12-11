@@ -12,7 +12,7 @@ export class Devices extends Component {
     render() {
         return (
             <div className="myAlbums__container">
-                <h1 className="devices__page__title h1 text-center page_title">Mijn albums</h1>
+                <h1 className="devices__page__title h1 text-center page_title  mt-5">Mijn albums</h1>
                 
                 <div className="content__container devices__card__container">
                         {devicesItemsList.map(item => 
