@@ -13,6 +13,7 @@ import UpdateProfile from './auth/UpdateProfile';
 import AddPhotos from './myPhotos/AddPhotos';
 import MyAlbums from './albums/MyAlbums';
 import AddAlbum from './albums/AddAlbum';
+import AddDevice from './devices/AddDevice';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Switch>
           <PrivateRoute exact path="/" component={Dashboard} />
           <PrivateRoute path="/devices" component={Devices} />
+          <PrivateRoute path="/addDevice" component={AddDevice} />
           <PrivateRoute path="/myPhotos" component={MyPhotos} />
           <PrivateRoute path="/updateProfile" component={UpdateProfile} />
           <PrivateRoute path="/addPhotos" component={AddPhotos} />

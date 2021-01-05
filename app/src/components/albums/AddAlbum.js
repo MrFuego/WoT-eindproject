@@ -9,21 +9,20 @@ export default function AddAlbum() {
     const [error, setError] = useState(null)
 
     const handleSubmit = (e) => {
-        let selected = e.target.files[0];
+        let selected = e.target.files;
 
         const types = ["image/png", "image/jpeg"]
         
-        
-        if(selected && types.includes(selected.type)) {
-            setFile(selected);
-            console.log(selected);
-            setError('');
-        } else {
-            setFile(null);
-            setError("Gelieve een extensie te uploaden van het juiste type (jpeg of png)");
+        for (let i = 0; i < selected.length; i++) {
+            if(selected[i] && types.includes(selected[i].type)) {
+                setFile(selected[i]);
+                console.log(selected[i]);
+                setError('');
+            } else {
+                setFile(null);
+                setError("Gelieve een extensie te uploaden van het juiste type (jpeg of png)");
+            }
         }
-
-        
     }
 
     return (
@@ -37,7 +36,9 @@ export default function AddAlbum() {
                 <Form.Group id="files">
                     <Form.Control type="file" ref={uploadRef} multiple onChange={handleSubmit}/>
                 </Form.Group>
+                
                 <div className="output">
+                    
                     { error && <Alert variant="danger"> { error } </Alert> }
                     { file && <div> {file.name}</div> }
                     { file && <ProgressBar file={file} setFile={setFile} /> }

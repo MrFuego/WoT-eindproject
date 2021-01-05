@@ -11,7 +11,7 @@ const useStorage = (file) => {
 
 
     useEffect(() => {
-        const storageRef = projectStorage.ref(currentUserId).child(file.name);
+        const storageRef = projectStorage.ref("images/"+currentUserId).child(file.name);
 
         storageRef.put(file).on('state_changed', (snap) => {
             let percentage = (snap.bytesTransferred / snap.totalBytes) *100;
