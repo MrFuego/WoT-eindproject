@@ -34,7 +34,7 @@ export default function AddAlbum() {
                     <Form.Control type="text" ref={nameRef} required/>
                 </Form.Group>
                 <Form.Group id="files">
-                    <Form.Control type="file" ref={uploadRef} multiple onChange={handleSubmit}/>
+                    <Form.Control type="file" ref={uploadRef} onChange={handleSubmit}/>
                 </Form.Group>
                 
                 <div className="output">

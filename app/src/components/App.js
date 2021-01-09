@@ -13,6 +13,7 @@ import UpdateProfile from './auth/UpdateProfile';
 import AddPhotos from './myPhotos/AddPhotos';
 import MyAlbums from './albums/MyAlbums';
 import AddAlbum from './albums/AddAlbum';
+import SingleAlbum from './albums/SingleAlbum';
 import AddDevice from './devices/AddDevice';
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
           <PrivateRoute path="/addPhotos" component={AddPhotos} />
           <PrivateRoute path="/addAlbum" component={AddAlbum} />
           <PrivateRoute path="/myAlbums" component={MyAlbums} />
+          <PrivateRoute path="/singleAlbum" component={SingleAlbum} />
           <Route path="/signup" component={Signup} />
           <Route path="/login" component={Login} />
           <Route path="/forgotPassword" component={ForgotPassword} />
