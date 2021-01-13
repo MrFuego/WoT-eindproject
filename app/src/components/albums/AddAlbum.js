@@ -1,5 +1,5 @@
 import React, { useRef, useState }  from 'react'
-import { Form, Button, Alert, Container } from "react-bootstrap"
+import { Form, Alert } from "react-bootstrap"
 import ProgressBar from "../myPhotos/ProgressBar";
 
 export default function AddAlbum() {

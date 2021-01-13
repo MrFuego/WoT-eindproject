@@ -1,4 +1,3 @@
-import '../styles/App.css';
 import Signup from './auth/Signup';
 import Login from './auth/Login';
 import Devices from './devices/Devices';
@@ -16,6 +15,8 @@ import AddAlbum from './albums/AddAlbum';
 import SingleAlbum from './albums/SingleAlbum';
 import AddDevice from './devices/AddDevice';
 import Frame from './frame/Frame';
+import Slideshow from './frame/Slideshow';
+import '../styles/App.css';
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
           <Route path="/login" component={Login} />
           <Route path="/forgotPassword" component={ForgotPassword} />
           <PrivateRoute path="/frame" component={Frame} />
+          <PrivateRoute path="/slideShow" component={Slideshow} />
           <Route component={NotFound} />
         </Switch>
       </AuthProvider>
