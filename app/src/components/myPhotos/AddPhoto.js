@@ -1,8 +1,9 @@
 import React, { useRef, useState }  from 'react'
 import { Form, Button, Alert, Container } from "react-bootstrap"
-import ProgressBar from "../myPhotos/ProgressBar";
+import ProgressBar from "./ProgressBar";
 
-export default function AddAlbum() {
+
+export default function AddPhoto() {
     const nameRef = useRef()
     const uploadRef = useRef()
     const [file, setFile] = useState(null)
@@ -26,13 +27,9 @@ export default function AddAlbum() {
     }
 
     return (
-        <div>
-            <h1>Album toevoegen</h1>
+        <div className="myPhotos__container">
+            <h1>Foto toevoegen</h1>
             <Form onSubmit={handleSubmit}>
-                <Form.Group id="name">
-                    <Form.Label>Album naam</Form.Label>
-                    <Form.Control type="text" ref={nameRef} required/>
-                </Form.Group>
                 <Form.Group id="files">
                     <Form.Control type="file" ref={uploadRef} onChange={handleSubmit}/>
                 </Form.Group>
@@ -46,4 +43,5 @@ export default function AddAlbum() {
             </Form>
         </div>
     )
+
 }

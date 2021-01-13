@@ -10,11 +10,12 @@ import PrivateRoute from './auth/PrivateRoute';
 import NotFound from './NotFound';
 import ForgotPassword from './auth/ForgotPassword';
 import UpdateProfile from './auth/UpdateProfile';
-import AddPhotos from './myPhotos/AddPhotos';
+import AddPhoto from './myPhotos/AddPhoto';
 import MyAlbums from './albums/MyAlbums';
 import AddAlbum from './albums/AddAlbum';
 import SingleAlbum from './albums/SingleAlbum';
 import AddDevice from './devices/AddDevice';
+import Frame from './frame/Frame';
 
 function App() {
   return (
@@ -26,13 +27,14 @@ function App() {
           <PrivateRoute path="/addDevice" component={AddDevice} />
           <PrivateRoute path="/myPhotos" component={MyPhotos} />
           <PrivateRoute path="/updateProfile" component={UpdateProfile} />
-          <PrivateRoute path="/addPhotos" component={AddPhotos} />
-          <PrivateRoute path="/addAlbum" component={AddAlbum} />
-          <PrivateRoute path="/myAlbums" component={MyAlbums} />
-          <PrivateRoute path="/singleAlbum" component={SingleAlbum} />
+          <PrivateRoute path="/addPhoto" component={AddPhoto} />
+          {/* <PrivateRoute path="/addAlbum" component={AddAlbum} /> */}
+          {/* <PrivateRoute path="/myAlbums" component={MyAlbums} /> */}
+          {/* <PrivateRoute path="/singleAlbum" component={SingleAlbum} /> */}
           <Route path="/signup" component={Signup} />
           <Route path="/login" component={Login} />
           <Route path="/forgotPassword" component={ForgotPassword} />
+          <PrivateRoute path="/frame" component={Frame} />
           <Route component={NotFound} />
         </Switch>
       </AuthProvider>

@@ -8,7 +8,7 @@ import './dashboard.css'
 
 
 const DashboardItemsList = [
-    {title: "Album toevoegen", icon: "fa fa-plus", link: "addAlbum"}, /*{title: "Alle foto's", icon:"fas fa-image", link: "myPhotos"},*/ {title: "Mijn albums", icon:"far fa-images", link: "myAlbums"}, {title: "Account", icon:"fas fa-user", link: "updateProfile"}, {title: "Devices", icon:"fas fa-desktop", link: "devices"}
+    {title: "Foto toevoegen", icon: "fa fa-plus", link: "addPhoto"}, {title: "Mijn foto's", icon:"fas fa-image", link: "myPhotos"}, /* {title: "Mijn albums", icon:"far fa-images", link: "myAlbums"},*/ {title: "Account", icon:"fas fa-user", link: "updateProfile"}, {title: "Devices", icon:"fas fa-desktop", link: "devices"}
 ]
 
 export default function Dashboard(){
