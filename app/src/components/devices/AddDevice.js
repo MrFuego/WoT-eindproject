@@ -41,7 +41,7 @@ export default function AddDevices() {
         collectionRef.update({
             name: nameRef.current.value,
             userId: currentUserId,
-        })
+        },setTimeout(500));
         history.push("/devices")
     }
 
